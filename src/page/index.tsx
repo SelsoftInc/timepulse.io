@@ -289,9 +289,9 @@ export default function Main() {
                   <div className="tab">
                     <span className="admin">Admin</span>
                   </div>
-                  <div className="tab-47">
+                  {/* <div className="tab-47">
                     <span className="approver">Approver</span>
-                  </div>
+                  </div> */}
                   <div className="tab-48">
                     <span className="employee">Employee</span>
                   </div>
@@ -698,7 +698,7 @@ export default function Main() {
                         access to our iOS and Android apps.
                       </span>
                     </div>
-                    <div className="container-cc">
+                    {/* <div className="container-cc">
                       <div className="button-cd">
                         <div className="svg-margin-ce">
                           <div className="svg-cf">
@@ -715,7 +715,7 @@ export default function Main() {
                         </div>
                         <span className="play-store">Play Store</span>
                       </div>
-                    </div>
+                    </div> */}
                   </div>
                   <div className="form">
                     <div className="container-d4">
@@ -750,7 +750,7 @@ export default function Main() {
             <div className="container-df">
               <div className="overlay-blur" />
               <div className="overlay-blur-e0" />
-              <div className="container-e1" />
+              <div className="container-e" />
             </div>
             <div className="container-e2">
               <div className="container-e3">

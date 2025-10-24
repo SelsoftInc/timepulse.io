@@ -5,9 +5,9 @@
     "Source Han Sans CN", sans-serif;
 }
 
-.main-container {
+/* .main-container {
   overflow: hidden;
-}
+} */
 
 .main-container,
 .main-container * {
@@ -21,7 +21,7 @@ button {
   outline: 0;
 }
 
-.main-container {
+/* .main-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -31,7 +31,7 @@ button {
   margin: 0 auto;
   background: #ffffff;
   overflow: hidden auto;
-}
+} */
 .container {
   display: flex;
   flex-direction: column;
@@ -58,8 +58,8 @@ button {
   flex-wrap: nowrap;
   position: relative;
   width: 1440px;
-  margin: 900px 0 0 0;
-  padding: 96px 20px 96px 20px;
+  margin: 950px 0 0 0;
+  padding: 50px 20px 96px 20px;
   background: linear-gradient(180deg, #f7f9fd, #ffffff);
   z-index: 2;
 }
@@ -174,17 +174,17 @@ button {
   flex-shrink: 0;
   position: relative;
   width: 1280px;
-  height: 549.2px;
+  height: auto;
   z-index: 9;
   max-width: 1280px;
 }
 .flex-row-eb {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
   position: relative;
   width: 1280px;
-  height: 289.6px;
+  min-height: 289.6px;
   margin: 0 0 0 0;
   z-index: 31;
 }
@@ -192,7 +192,10 @@ button {
   flex-shrink: 0;
   position: relative;
   width: 302px;
-  height: 289.6px;
+  min-height: 289.6px;
+  display: flex;
+  flex-direction: column;
+  padding: 24.8px;
   background: #ffffff;
   border: 1px solid #e1e6ef;
   z-index: 10;
@@ -206,7 +209,7 @@ button {
   position: relative;
   width: 56px;
   height: 56px;
-  margin: 24.8px 0 0 24.801px;
+  margin: 0 0 17px 0;
   background: linear-gradient(135deg, #1c84d9, #27c4a4);
   z-index: 11;
   border-radius: 12px;
@@ -227,8 +230,8 @@ button {
   align-items: flex-start;
   flex-wrap: nowrap;
   position: relative;
-  width: 252.4px;
-  margin: 17px 0 0 24.801px;
+  width: 100%;
+  margin: 0 0 9px 0;
   z-index: 13;
 }
 .automated-timesheet-capture {
@@ -237,8 +240,8 @@ button {
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
-  width: 231px;
-  height: 56px;
+  width: 100%;
+  min-height: 56px;
   color: #0f1624;
   font-family: Poppins, var(--default-font-family);
   font-size: 20px;
@@ -247,7 +250,7 @@ button {
   text-align: left;
   text-overflow: initial;
   z-index: 14;
-  overflow: hidden;
+  overflow: visible;
 }
 .container-6 {
   display: flex;
@@ -255,18 +258,18 @@ button {
   align-items: flex-start;
   flex-wrap: nowrap;
   position: relative;
-  width: 252.4px;
-  margin: 9px 0 0 24.801px;
+  width: 100%;
+  margin: 0;
   z-index: 15;
 }
 .upload-any-format {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
-  width: 249px;
-  height: 104px;
+  width: 100%;
+  min-height: 104px;
   color: #65718b;
   font-family: Inter, var(--default-font-family);
   font-size: 16px;
@@ -275,13 +278,16 @@ button {
   text-align: left;
   text-overflow: initial;
   z-index: 16;
-  overflow: hidden;
+  overflow: visible;
 }
 .background-border-7 {
   flex-shrink: 0;
   position: relative;
   width: 302px;
-  height: 289.6px;
+  min-height: 289.6px;
+  display: flex;
+  flex-direction: column;
+  padding: 24.8px;
   background: #ffffff;
   border: 1px solid #e1e6ef;
   z-index: 17;
@@ -295,7 +301,7 @@ button {
   position: relative;
   width: 56px;
   height: 56px;
-  margin: 24.8px 0 0 24.801px;
+  margin: 0 0 17px 0;
   background: linear-gradient(135deg, #1c84d9, #27c4a4);
   z-index: 18;
   border-radius: 12px;
@@ -316,8 +322,8 @@ button {
   align-items: flex-start;
   flex-wrap: nowrap;
   position: relative;
-  width: 252.4px;
-  margin: 17px 0 0 24.801px;
+  width: 100%;
+  margin: 0 0 9px 0;
   z-index: 20;
 }
 .smart-sow-msa-mapping {
@@ -326,8 +332,8 @@ button {
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
-  width: 187px;
-  height: 56px;
+  width: 100%;
+  min-height: 56px;
   color: #0f1624;
   font-family: Poppins, var(--default-font-family);
   font-size: 20px;
@@ -336,7 +342,7 @@ button {
   text-align: left;
   text-overflow: initial;
   z-index: 21;
-  overflow: hidden;
+  overflow: visible;
 }
 .container-b {
   display: flex;
@@ -344,18 +350,18 @@ button {
   align-items: flex-start;
   flex-wrap: nowrap;
   position: relative;
-  width: 252.4px;
-  margin: 9px 0 0 24.801px;
+  width: 100%;
+  margin: 0;
   z-index: 22;
 }
 .automatically-maps-timesheets {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
-  width: 239px;
-  height: 104px;
+  width: 100%;
+  min-height: 104px;
   color: #65718b;
   font-family: Inter, var(--default-font-family);
   font-size: 16px;
@@ -364,13 +370,16 @@ button {
   text-align: left;
   text-overflow: initial;
   z-index: 23;
-  overflow: hidden;
+  overflow: visible;
 }
 .background-border-c {
   flex-shrink: 0;
   position: relative;
   width: 302px;
-  height: 289.6px;
+  min-height: 289.6px;
+  display: flex;
+  flex-direction: column;
+  padding: 24.8px;
   background: #ffffff;
   border: 1px solid #e1e6ef;
   z-index: 24;
@@ -384,7 +393,7 @@ button {
   position: relative;
   width: 56px;
   height: 56px;
-  margin: 24.8px 0 0 24.801px;
+  margin: 0 0 17px 0;
   background: linear-gradient(135deg, #1c84d9, #27c4a4);
   z-index: 25;
   border-radius: 12px;
@@ -405,8 +414,8 @@ button {
   align-items: flex-start;
   flex-wrap: nowrap;
   position: relative;
-  width: 252.4px;
-  margin: 17px 0 0 24.801px;
+  width: 100%;
+  margin: 0 0 9px 0;
   z-index: 27;
 }
 .invoice-generation {
@@ -429,18 +438,18 @@ button {
   align-items: flex-start;
   flex-wrap: nowrap;
   position: relative;
-  width: 252.4px;
-  margin: 9px 0 0 24.801px;
+  width: 100%;
+  margin: 0;
   z-index: 29;
 }
 .generate-accurate-invoices {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
-  width: 228px;
-  height: 104px;
+  width: 100%;
+  min-height: 104px;
   color: #65718b;
   font-family: Inter, var(--default-font-family);
   font-size: 16px;
@@ -449,13 +458,16 @@ button {
   text-align: left;
   text-overflow: initial;
   z-index: 30;
-  overflow: hidden;
+  overflow: visible;
 }
 .background-border-11 {
   flex-shrink: 0;
   position: relative;
   width: 302px;
-  height: 289.6px;
+  min-height: 289.6px;
+  display: flex;
+  flex-direction: column;
+  padding: 24.8px;
   background: #ffffff;
   border: 1px solid #e1e6ef;
   z-index: 31;
@@ -469,7 +481,7 @@ button {
   position: relative;
   width: 56px;
   height: 56px;
-  margin: 24.8px 0 0 24.801px;
+  margin: 0 0 17px 0;
   background: linear-gradient(135deg, #1c84d9, #27c4a4);
   z-index: 32;
   border-radius: 12px;
@@ -490,8 +502,8 @@ button {
   align-items: flex-start;
   flex-wrap: nowrap;
   position: relative;
-  width: 252.4px;
-  margin: 17px 0 0 24.801px;
+  width: 100%;
+  margin: 0 0 9px 0;
   z-index: 34;
 }
 .approval-workflow {
@@ -514,18 +526,18 @@ button {
   align-items: flex-start;
   flex-wrap: nowrap;
   position: relative;
-  width: 252.4px;
-  margin: 9px 0 0 24.801px;
+  width: 100%;
+  margin: 0;
   z-index: 36;
 }
 .multi-level-approval-chains {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
-  width: 239px;
-  height: 78px;
+  width: 100%;
+  min-height: 78px;
   color: #65718b;
   font-family: Inter, var(--default-font-family);
   font-size: 16px;
@@ -534,15 +546,15 @@ button {
   text-align: left;
   text-overflow: initial;
   z-index: 37;
-  overflow: hidden;
+  overflow: visible;
 }
 .flex-row-eca {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
   position: relative;
   width: 954px;
-  height: 235.6px;
+  min-height: 235.6px;
   margin: 24px 0 0 0;
   z-index: 52;
 }
@@ -550,7 +562,10 @@ button {
   flex-shrink: 0;
   position: relative;
   width: 302px;
-  height: 235.6px;
+  min-height: 235.6px;
+  display: flex;
+  flex-direction: column;
+  padding: 24.8px;
   background: #ffffff;
   border: 1px solid #e1e6ef;
   z-index: 38;
@@ -564,7 +579,7 @@ button {
   position: relative;
   width: 56px;
   height: 56px;
-  margin: 24.8px 0 0 24.801px;
+  margin: 0 0 17px 0;
   background: linear-gradient(135deg, #1c84d9, #27c4a4);
   z-index: 39;
   border-radius: 12px;
@@ -585,8 +600,8 @@ button {
   align-items: flex-start;
   flex-wrap: nowrap;
   position: relative;
-  width: 252.4px;
-  margin: 17px 0 0 24.801px;
+  width: 100%;
+  margin: 0 0 9px 0;
   z-index: 41;
 }
 .dashboard-insights {
@@ -609,18 +624,18 @@ button {
   align-items: flex-start;
   flex-wrap: nowrap;
   position: relative;
-  width: 252.4px;
-  margin: 9px 0 0 24.801px;
+  width: 100%;
+  margin: 0;
   z-index: 43;
 }
 .real-time-analytics {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
-  width: 226px;
-  height: 78px;
+  width: 100%;
+  min-height: 78px;
   color: #65718b;
   font-family: Inter, var(--default-font-family);
   font-size: 16px;
@@ -629,13 +644,16 @@ button {
   text-align: left;
   text-overflow: initial;
   z-index: 44;
-  overflow: hidden;
+  overflow: visible;
 }
 .background-border-1b {
   flex-shrink: 0;
   position: relative;
   width: 302px;
-  height: 235.6px;
+  min-height: 235.6px;
+  display: flex;
+  flex-direction: column;
+  padding: 24.8px;
   background: #ffffff;
   border: 1px solid #e1e6ef;
   z-index: 45;
@@ -649,7 +667,7 @@ button {
   position: relative;
   width: 56px;
   height: 56px;
-  margin: 24.8px 0 0 24.801px;
+  margin: 0 0 17px 0;
   background: linear-gradient(135deg, #1c84d9, #27c4a4);
   z-index: 46;
   border-radius: 12px;
@@ -670,8 +688,8 @@ button {
   align-items: flex-start;
   flex-wrap: nowrap;
   position: relative;
-  width: 252.4px;
-  margin: 17px 0 0 24.801px;
+  width: 100%;
+  margin: 0 0 9px 0;
   z-index: 48;
 }
 .alerts-reminders {
@@ -694,18 +712,18 @@ button {
   align-items: flex-start;
   flex-wrap: nowrap;
   position: relative;
-  width: 252.4px;
-  margin: 9px 0 0 24.801px;
+  width: 100%;
+  margin: 0;
   z-index: 50;
 }
 .smart-notifications {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
-  width: 235px;
-  height: 78px;
+  width: 100%;
+  min-height: 78px;
   color: #65718b;
   font-family: Inter, var(--default-font-family);
   font-size: 16px;
@@ -714,13 +732,16 @@ button {
   text-align: left;
   text-overflow: initial;
   z-index: 51;
-  overflow: hidden;
+  overflow: visible;
 }
 .background-border-20 {
   flex-shrink: 0;
   position: relative;
   width: 302px;
-  height: 235.6px;
+  min-height: 235.6px;
+  display: flex;
+  flex-direction: column;
+  padding: 24.8px;
   background: #ffffff;
   border: 1px solid #e1e6ef;
   z-index: 52;
@@ -734,7 +755,7 @@ button {
   position: relative;
   width: 56px;
   height: 56px;
-  margin: 24.8px 0 0 24.801px;
+  margin: 0 0 17px 0;
   background: linear-gradient(135deg, #1c84d9, #27c4a4);
   z-index: 53;
   border-radius: 12px;
@@ -755,8 +776,8 @@ button {
   align-items: flex-start;
   flex-wrap: nowrap;
   position: relative;
-  width: 252.4px;
-  margin: 17px 0 0 24.801px;
+  width: 100%;
+  margin: 0 0 9px 0;
   z-index: 55;
 }
 .saas-simplicity {
@@ -779,18 +800,18 @@ button {
   align-items: flex-start;
   flex-wrap: nowrap;
   position: relative;
-  width: 252.4px;
-  margin: 9px 0 0 24.801px;
+  width: 100%;
+  margin: 0;
   z-index: 57;
 }
 .no-installations {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   flex-shrink: 0;
   position: relative;
-  width: 216px;
-  height: 78px;
+  width: 100%;
+  min-height: 78px;
   color: #65718b;
   font-family: Inter, var(--default-font-family);
   font-size: 16px;
@@ -799,7 +820,7 @@ button {
   text-align: left;
   text-overflow: initial;
   z-index: 58;
-  overflow: hidden;
+  overflow: visible;
 }
 .section-25 {
   display: flex;
@@ -1370,10 +1391,10 @@ button {
   align-items: flex-start;
   flex-wrap: nowrap;
   position: relative;
-  width: 1440px;
-  height: 1067px;
+  max-width: 1600px;
+  height: 1080px;
   margin: 0px 0 0 0;
-  padding: 80px 20px 80px 20px;
+  padding: 60px 20px 80px 20px;
   background: linear-gradient(180deg, #f7f9fd, #ffffff);
   z-index: 59;
 }
@@ -1481,7 +1502,7 @@ button {
   align-self: stretch;
   flex-wrap: nowrap;
   flex-shrink: 0;
-  gap: 58px;
+  gap: 50px;
   position: relative;
   z-index: 66;
 }
@@ -1492,7 +1513,7 @@ button {
   flex-wrap: nowrap;
   flex-shrink: 0;
   position: relative;
-  width: 672px;
+  width: 450px;
   padding: 8px 8px 8px 8px;
   background: #f1f3f9;
   z-index: 67;
@@ -2216,7 +2237,7 @@ button {
   right: 789.34px;
   bottom: 0;
   left: 0;
-  padding: 32.8px 32.8px 32.8px 32.8px;
+  padding: 32px;
   background: #ffffff;
   border: 1px solid #e1e6ef;
   z-index: 262;
@@ -2323,11 +2344,12 @@ button {
   align-items: flex-start;
   align-self: stretch;
   flex-wrap: nowrap;
-  flex-shrink: 0;
+  flex-shrink: 1;
   gap: 12px;
   position: relative;
   min-width: 0;
-  padding: 16px 0 24px 0;
+  padding: 16px 0 0 0;
+  margin-bottom: auto;
   z-index: 270;
 }
 .item {
@@ -2631,7 +2653,8 @@ button {
   position: relative;
   min-width: 0;
   height: 40px;
-  padding: 9.6px 17.6px 9.6px 17.6px;
+  margin-top: 24px;
+  padding: 8px 16px 8px 16px;
   background: #ffffff;
   border: 1px solid #1c84d9;
   z-index: 296;
@@ -2663,7 +2686,7 @@ button {
   right: -0.01px;
   bottom: 0;
   left: 789.33px;
-  padding: 32.8px 32.8px 32.8px 32.8px;
+  padding: 32px;
   background: #ffffff;
   border: 1px solid #e1e6ef;
   z-index: 298;
@@ -2774,11 +2797,12 @@ button {
   align-items: flex-start;
   align-self: stretch;
   flex-wrap: nowrap;
-  flex-shrink: 0;
+  flex-shrink: 1;
   gap: 12px;
   position: relative;
   min-width: 0;
-  padding: 16px 0 24px 0;
+  padding: 16px 0 0 0;
+  margin-bottom: auto;
   z-index: 306;
 }
 .svg-margin-83 {
@@ -3021,7 +3045,8 @@ button {
   position: relative;
   min-width: 0;
   height: 40px;
-  padding: 9.6px 17.6px 9.6px 17.6px;
+  margin-top: 24px;
+  padding: 8px 16px 8px 16px;
   background: #ffffff;
   border: 1px solid #1c84d9;
   z-index: 327;
@@ -3053,7 +3078,7 @@ button {
   right: 394.68px;
   bottom: 0;
   left: 394.66px;
-  padding: 33.6px 33.6px 33.6px 33.6px;
+  padding: 32px;
   background: #ffffff;
   border: 1px solid #1c84d9;
   z-index: 329;
@@ -3164,11 +3189,12 @@ button {
   align-items: flex-start;
   align-self: stretch;
   flex-wrap: nowrap;
-  flex-shrink: 0;
+  flex-shrink: 1;
   gap: 12px;
   position: relative;
   min-width: 0;
-  padding: 16px 0 24px 0;
+  padding: 16px 0 0 0;
+  margin-bottom: auto;
   z-index: 337;
 }
 .item-98 {
@@ -3365,6 +3391,7 @@ button {
   position: relative;
   min-width: 0;
   height: 40px;
+  margin-top: 24px;
   padding: 8px 16px 8px 16px;
   background: linear-gradient(172.29deg, #1c84d9, #7c39ef);
   z-index: 354;
@@ -3428,13 +3455,13 @@ button {
 .section-a9 {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   flex-wrap: nowrap;
   gap: 40px;
   position: relative;
-  width: 1440px;
-  margin: 0.4px 0 0 0;
-  padding: 80px 20px 80px 20px;
+  width: 100%;
+  margin: 0;
+  padding: 80px 0;
   background: #ffffff;
   z-index: 110;
 }
@@ -3445,7 +3472,7 @@ button {
   align-self: stretch;
   flex-wrap: nowrap;
   flex-shrink: 0;
-  gap: 64px;
+  gap: 48px;
   position: relative;
   min-width: 0;
   padding: 0 24px 0 24px;
@@ -3539,14 +3566,14 @@ button {
 .container-ae {
   display: flex;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: space-evenly;
   flex-wrap: nowrap;
+  align-self: stretch;
   flex-shrink: 0;
-  gap: 24px;
+  gap: 40px;
   position: relative;
-  width: 1152px;
   z-index: 117;
-  max-width: 1152px;
+  max-width: 1200px;
 }
 .background-border-af {
   display: flex;
@@ -3555,10 +3582,9 @@ button {
   justify-content: center;
   align-self: stretch;
   flex-wrap: nowrap;
-  flex-shrink: 0;
+  flex: 1;
   position: relative;
-  width: 172px;
-  padding: 24.8px 24.8px 24.8px 24.8px;
+  padding: 20px;
   background: #ffffff;
   border: 1px solid #e1e6ef;
   z-index: 118;
@@ -3573,7 +3599,7 @@ button {
   position: relative;
   width: 64px;
   height: 76px;
-  padding: 0 0 12px 0;
+  padding: 0 0 8px 0;
   z-index: 119;
 }
 .container-b0 {
@@ -3637,10 +3663,9 @@ button {
   justify-content: center;
   align-self: stretch;
   flex-wrap: nowrap;
-  flex-shrink: 0;
+  flex: 1;
   position: relative;
-  width: 172px;
-  padding: 24.8px 24.8px 24.8px 24.8px;
+  padding: 20px;
   background: #ffffff;
   border: 1px solid #e1e6ef;
   z-index: 124;
@@ -3655,7 +3680,7 @@ button {
   position: relative;
   width: 64px;
   height: 76px;
-  padding: 0 0 12px 0;
+  padding: 0 0 8px 0;
   z-index: 125;
 }
 .container-b4 {
@@ -3719,10 +3744,9 @@ button {
   justify-content: center;
   align-self: stretch;
   flex-wrap: nowrap;
-  flex-shrink: 0;
+  flex: 1;
   position: relative;
-  width: 172px;
-  padding: 24.8px 24.8px 24.8px 24.8px;
+  padding: 20px;
   background: #ffffff;
   border: 1px solid #e1e6ef;
   z-index: 130;
@@ -3737,7 +3761,7 @@ button {
   position: relative;
   width: 64px;
   height: 76px;
-  padding: 0 0 12px 0;
+  padding: 0 0 8px 0;
   z-index: 131;
 }
 .container-b8 {
@@ -3801,10 +3825,9 @@ button {
   justify-content: center;
   align-self: stretch;
   flex-wrap: nowrap;
-  flex-shrink: 0;
+  flex: 1;
   position: relative;
-  width: 172px;
-  padding: 24.8px 24.8px 24.8px 24.8px;
+  padding: 20px;
   background: #ffffff;
   border: 1px solid #e1e6ef;
   z-index: 136;
@@ -3819,7 +3842,7 @@ button {
   position: relative;
   width: 64px;
   height: 76px;
-  padding: 0 0 12px 0;
+  padding: 0 0 8px 0;
   z-index: 137;
 }
 .container-bc {
@@ -3884,10 +3907,9 @@ button {
   justify-content: center;
   align-self: stretch;
   flex-wrap: nowrap;
-  flex-shrink: 0;
+  flex: 1;
   position: relative;
-  width: 172px;
-  padding: 24.8px 24.8px 24.8px 24.8px;
+  padding: 20px;
   background: #ffffff;
   border: 1px solid #e1e6ef;
   z-index: 142;
@@ -3902,7 +3924,7 @@ button {
   position: relative;
   width: 64px;
   height: 76px;
-  padding: 0 0 12px 0;
+  padding: 0 0 8px 0;
   z-index: 143;
 }
 .container-c0 {
@@ -3966,10 +3988,9 @@ button {
   justify-content: center;
   align-self: stretch;
   flex-wrap: nowrap;
-  flex-shrink: 0;
+  flex: 1;
   position: relative;
-  width: 172px;
-  padding: 24.8px 24.8px 24.8px 24.8px;
+  padding: 20px;
   background: #ffffff;
   border: 1px solid #e1e6ef;
   z-index: 148;
@@ -3984,7 +4005,7 @@ button {
   position: relative;
   width: 64px;
   height: 76px;
-  padding: 0 0 12px 0;
+  padding: 0 0 8px 0;
   z-index: 149;
 }
 .container-c4 {
@@ -4044,18 +4065,15 @@ button {
 .section-c6 {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  align-self: stretch;
+  align-items: center;
   flex-wrap: nowrap;
-  flex-shrink: 0;
   position: relative;
-  min-width: 0;
-  height: 286px;
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  margin-top: 40px;
+  min-height: 250px;
   background: #ffffff;
-  z-index: 154;
   overflow: hidden;
-  border-radius: 11.707px;
-  box-shadow: 0 0.98px 1.951px 0 rgba(0, 0, 0, 0.1);
 }
 .background-c7 {
   display: flex;
@@ -4065,10 +4083,11 @@ button {
   flex-wrap: nowrap;
   flex-shrink: 0;
   position: relative;
-  padding: 39.024px 39.024px 39.024px 39.024px;
+  width: 100%;
+  height: 100%;
+  padding: 50px 80px;
   background: linear-gradient(176.66deg, #0f172a, #1e293b);
   z-index: 155;
-  border-radius: 15.61px;
 }
 .gradient {
   flex-shrink: 0;
@@ -4535,7 +4554,7 @@ button {
   top: 0;
   right: 0;
   left: 0;
-  padding: 200px 0 165px 0;
+  padding: 120px 0 165px 0;
   background: linear-gradient(180deg, #f7f9fd, #ffffff);
   z-index: 190;
   overflow: hidden;
@@ -4604,7 +4623,7 @@ button {
   align-self: stretch;
   flex-wrap: nowrap;
   flex-shrink: 0;
-  gap: 48px;
+  gap: 4px;
   position: relative;
   min-width: 0;
   z-index: 196;
@@ -4838,12 +4857,13 @@ button {
 .footer {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   align-self: stretch;
   flex-wrap: nowrap;
   flex-shrink: 0;
   position: relative;
-  padding: 64px 20px 64px 20px;
+  width: 100%;
+  padding: 60px 0 64px 0;
   background: #0f1624;
   z-index: 359;
 }
@@ -4854,11 +4874,12 @@ button {
   align-self: stretch;
   flex-wrap: nowrap;
   flex-shrink: 0;
-  gap: 48px;
+  gap: 38px;
   position: relative;
-  padding: 0 24px 0 24px;
+  padding: 0 60px;
   z-index: 360;
-  max-width: 1400px;
+  max-width: 1600px;
+  width: 100%;
 }
 .container-f0 {
   display: flex;
@@ -5528,12 +5549,12 @@ button {
   flex-wrap: nowrap;
   flex-shrink: 0;
   position: absolute;
-  width: 1440px;
+  max-width: 1600px;
+  min-width: 1400px;
   height: 72px;
   top: 0;
   left: 0;
-  padding: 0 20px 0 20px;
-  background: rgba(255, 255, 255, 0.95);
+  padding: 0 0px 0 0px;
   z-index: 418;
   backdrop-filter: blur(8px);
 }
@@ -5544,9 +5565,9 @@ button {
   flex-wrap: nowrap;
   flex-shrink: 0;
   position: relative;
-  width: 1400px;
+  max-width: 1600px;
   min-width: 1400px;
-  padding: 16px 24px 16px 24px;
+  padding: 16px 2px 16px 24px;
   z-index: 419;
   max-width: 1400px;
 }
@@ -5555,9 +5576,9 @@ button {
   align-items: center;
   flex-wrap: nowrap;
   flex-shrink: 0;
-  gap: 218.7px;
+  gap: 270px;
   position: relative;
-  width: 1277px;
+  max-width: 1600px;
   z-index: 420;
 }
 .time-pulse {
