@@ -1,0 +1,254 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  position: fixed;
+  width: 100%;
+  max-width: 1600px;
+  height: 72px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+  z-index: 1000;
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease;
+}
+
+.header.scrolled {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  position: relative;
+  width: 100%;
+  max-width: 1400px;
+  padding: 16px 24px;
+  z-index: 419;
+}
+
+.container-115 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  position: relative;
+  width: 100%;
+  z-index: 420;
+}
+
+.time-pulse {
+  flex-shrink: 0;
+  position: relative;
+  width: 216.29px;
+  height: 40px;
+  background: url(https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-10-21/8KEiaNvPGY.png)
+    no-repeat center;
+  background-size: cover;
+  z-index: 421;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.time-pulse:hover {
+  transform: scale(1.05);
+}
+
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 1001;
+}
+
+.mobile-menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: #0f1624;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.container-116 {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 32px;
+  position: relative;
+  z-index: 422;
+}
+
+.link-117,
+.link-119,
+.link-11b,
+.link-11d,
+.link-11e {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  position: relative;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.link-117:hover,
+.link-119:hover,
+.link-11b:hover,
+.link-11d:hover,
+.link-11e:hover {
+  transform: translateY(-2px);
+}
+
+.features-118,
+.pricing-11a,
+.how-it-works-11c,
+.tools,
+.contact-11f {
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  height: 24px;
+  color: #0f1624;
+  font-family: Inter, var(--default-font-family);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: left;
+  white-space: nowrap;
+  transition: color 0.3s ease;
+}
+
+.link-117:hover .features-118,
+.link-119:hover .pricing-11a,
+.link-11b:hover .how-it-works-11c,
+.link-11d:hover .tools,
+.link-11e:hover .contact-11f {
+  color: #1c84d9;
+}
+
+.container-120 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  gap: 16px;
+  position: relative;
+  z-index: 433;
+}
+
+.button-121,
+.button-122 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+  position: relative;
+  height: 40px;
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button-121 {
+  border: 1px solid #e5e7eb;
+}
+
+.button-121:hover {
+  background: #f3f4f6;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.button-122 {
+  background: linear-gradient(154.71deg, #1c84d9, #7c39ef);
+}
+
+.button-122:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(28, 132, 217, 0.4);
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  color: #0f1624;
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.sign-up {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  flex-basis: auto;
+  position: relative;
+  color: #ffffff;
+  font-family: Inter, var(--default-font-family);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+  .mobile-menu-toggle {
+    display: flex;
+  }
+
+  .container-116 {
+    position: fixed;
+    top: 72px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    background: white;
+    padding: 20px;
+    gap: 20px;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+
+  .container-116.mobile-open {
+    transform: translateX(0);
+  }
+
+  .link-117,
+  .link-119,
+  .link-11b,
+  .link-11d,
+  .link-11e {
+    width: 100%;
+  }
+}
