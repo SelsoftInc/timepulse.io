@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import './Dashboards.css';
+import adminDashboard from '../../assets/TimePulse.png';
+import employeeDashboard from '../../assets/TimePulse.png';
 
 type TabType = 'admin' | 'employee';
 
@@ -7,8 +9,8 @@ export default function Dashboards() {
   const [activeTab, setActiveTab] = useState<TabType>('admin');
 
   const dashboardImages = {
-    admin: 'https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-10-21/admin-dashboard.png',
-    employee: 'https://codia-f2c.s3.us-west-1.amazonaws.com/image/2025-10-21/employee-dashboard.png'
+    admin: adminDashboard,
+    employee: employeeDashboard
   };
 
   return (
