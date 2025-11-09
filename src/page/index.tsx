@@ -922,12 +922,9 @@ export default function Main() {
               </div>
             </div>
             <div className="container-120">
-              <div className="button-121">
+              <a href="https://main.dolfu0p2owxyr.amplifyapp.com/login" className="button-121">
                 <span className="login">Login</span>
-              </div>
-              <div className="button-122">
-                <span className="sign-up">Sign Up</span>
-              </div>
+              </a>
             </div>
           </div>
         </div>
