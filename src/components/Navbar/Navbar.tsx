@@ -57,12 +57,9 @@ export default function Navbar() {
           </div>
 
           <div className="container-120">
-            <div className="button-121" onClick={() => window.open('#login', '_self')}>
+            <a href="https://main.dolfu0p2owxyr.amplifyapp.com/login" className="button-121">
               <span className="login">Login</span>
-            </div>
-            <div className="button-122" onClick={() => window.open('#signup', '_self')}>
-              <span className="sign-up">Sign Up</span>
-            </div>
+            </a>
           </div>
         </div>
       </nav>
