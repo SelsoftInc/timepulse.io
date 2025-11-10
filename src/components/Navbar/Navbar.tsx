@@ -57,7 +57,7 @@ export default function Navbar() {
           </div>
 
           <div className="container-120">
-            <a href="https://main.dolfu0p2owxyr.amplifyapp.com/login" className="button-121">
+            <a href="https://app.timepulse.io/login" className="button-121">
               <span className="login">Login</span>
             </a>
           </div>
